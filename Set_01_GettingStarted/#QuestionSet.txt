@@ -27,5 +27,3 @@ Question Set 01 :  Getting Started  (2 days)
 26. Harshad number - GS26_HarshadNumber.java
 27. Abundant number - GS27_AbundantNumber.java
 28. Friendly pair - GS28_FriendlyPair.java
-
-
