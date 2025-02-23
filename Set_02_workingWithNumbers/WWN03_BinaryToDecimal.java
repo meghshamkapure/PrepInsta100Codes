@@ -25,6 +25,8 @@ public class WWN03_BinaryToDecimal {
             }
 
             System.out.println("BINARY : " + binaryCopy + " is " + "DECIMAL : " + decimalNumber);
+        }else{
+            System.out.println("The number is binary");
         }
 
     }
