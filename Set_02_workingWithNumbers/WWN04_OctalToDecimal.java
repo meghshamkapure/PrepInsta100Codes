@@ -25,6 +25,9 @@ public class WWN04_OctalToDecimal {
 
         System.out.println(numcopy+" is not OCTAL");
         }
+
+        sc.close();
+
     }
 
     public static boolean isOctal(int number) {

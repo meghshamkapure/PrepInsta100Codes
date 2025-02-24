@@ -15,6 +15,8 @@ public class GS23_PerfectNumber {
                 sum = sum + i ; 
         }
         System.out.println(sum==num?"Perfect Number":"Not Perfect Number");
+        sc.close();
+
     }
 }
  

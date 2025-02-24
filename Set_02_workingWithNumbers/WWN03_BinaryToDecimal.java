@@ -29,6 +29,9 @@ public class WWN03_BinaryToDecimal {
             System.out.println("The number is binary");
         }
 
+        sc.close();
+
+
     }
 
     public static boolean isBinary(int num) {

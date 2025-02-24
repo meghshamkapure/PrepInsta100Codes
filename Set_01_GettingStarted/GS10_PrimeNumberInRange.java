@@ -20,6 +20,9 @@ public class GS10_PrimeNumberInRange {
             }
         }
 
+        sc.close();
+
+
     }
 
     public static boolean isPrime(int num) {

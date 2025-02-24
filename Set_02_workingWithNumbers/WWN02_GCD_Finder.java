@@ -30,5 +30,7 @@ public class WWN02_GCD_Finder {
         }
 
         System.out.print(gcd);
+        sc.close();
+
     }
 }

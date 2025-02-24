@@ -19,5 +19,7 @@ public class GS19_PowerOfNumber {
         }
 
         System.out.println("Base "+base +" Power "+exponent+" is equals to "+ value);
+        sc.close();
+
     }
 }

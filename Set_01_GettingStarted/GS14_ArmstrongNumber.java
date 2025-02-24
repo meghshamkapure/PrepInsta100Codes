@@ -26,6 +26,8 @@ public class GS14_ArmstrongNumber {
         }
 
         System.out.println(numSum == num);
+        sc.close();
+
     }
 
     public static int countDigit(int num) {

@@ -36,5 +36,8 @@ public class WWN00_HCF_Finder {
             if (num2==0)
                 System.out.println("Number 2 can't be zero");
         }
+        
+        sc.close();
+        
     }
 }

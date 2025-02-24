@@ -40,6 +40,7 @@ public class GS07_GreatestOfThreeNumbers {
         } else if (n3 > n1 && n1 > n3) {
             System.out.println("n3 is gretest");
         }
+        sc.close();
 
     }
 }

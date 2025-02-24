@@ -11,6 +11,8 @@ public class GS02_EvenOddNumber {
         int n = sc.nextInt();
 
         System.out.println(n == 0 ? "Zero" : n % 2 == 0 ? "Even number" : "Odd number");
+        sc.close();
+    
     }
 
 }

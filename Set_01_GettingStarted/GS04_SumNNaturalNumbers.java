@@ -22,5 +22,8 @@ public class GS04_SumNNaturalNumbers {
             }
             starting++;
         }
+
+        sc.close();
+
     }
 }

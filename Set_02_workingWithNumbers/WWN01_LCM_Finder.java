@@ -30,6 +30,9 @@ public class WWN01_LCM_Finder {
                 break;
             }
         }
+    
+        sc.close();
+
     }
     
 }

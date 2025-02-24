@@ -18,6 +18,8 @@ public class GS15_ArmstrongNumberInRange {
             System.out.print(armstrongNumber(i)?i+" ":"");
         }
 
+        sc.close();
+
     }
 
     static boolean armstrongNumber(int num) {

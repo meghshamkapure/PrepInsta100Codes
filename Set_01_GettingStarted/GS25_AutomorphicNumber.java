@@ -21,6 +21,9 @@ public class GS25_AutomorphicNumber {
         else
             System.out.println("Not Automorphic number ");
 
+        sc.close();
+        
+
     }
 
     public static int countDigit(int number) {

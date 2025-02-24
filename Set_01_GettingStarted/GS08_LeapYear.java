@@ -21,6 +21,8 @@ public class GS08_LeapYear {
         } else {
             System.out.println("Its not a leap year");
         }
+        sc.close();
+
     }
 
 }

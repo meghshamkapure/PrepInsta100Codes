@@ -16,5 +16,7 @@ public class GS20_FactorsOfNumber {
             if  (number % i==0)
                 System.out.print(i+"\t");
         }
+        sc.close();
+
     }    
 }

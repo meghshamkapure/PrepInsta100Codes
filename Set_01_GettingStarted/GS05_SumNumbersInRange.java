@@ -19,6 +19,8 @@ public class GS05_SumNumbersInRange {
         }
 
         System.out.println("Sum of digits betwwen " + start + " to " + end + " is " + sum);
+        sc.close();
+
 
     }
 }

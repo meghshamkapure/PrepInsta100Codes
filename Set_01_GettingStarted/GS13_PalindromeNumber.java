@@ -22,5 +22,7 @@ public class GS13_PalindromeNumber {
         }
         System.out.println(reversedNum);
         System.out.println(num==reversedNum?"is Palindrome": "is not palindrome");
+        sc.close();
+
     }
 }

@@ -20,5 +20,7 @@ public class GS09_PrimeNumber {
         }
 
         System.out.println(isPrime==true?"is Prime":"is not Prime");
+        sc.close();
+
     }
 }

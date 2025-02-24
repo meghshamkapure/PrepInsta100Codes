@@ -17,6 +17,8 @@ public class GS26_HarshadNumber {
         else
             System.out.println("Not Harshad number ");
 
+        sc.close();
+
     }
 
     public static int sumOfDigits(int number){

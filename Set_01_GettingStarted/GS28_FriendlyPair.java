@@ -19,6 +19,9 @@ public class GS28_FriendlyPair {
             System.out.println("Friendly pair ");
         else
             System.out.println("Not Friendly pair ");
+        
+        sc.close();
+    
     }   
 
     public static int abundancyIndex (int num){

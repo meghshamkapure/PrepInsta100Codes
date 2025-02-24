@@ -21,7 +21,9 @@ public class GS16_FibonacciSeriesUptoNthTerm {
             System.out.print(sum+"\t");
             n1=n2;
             n2=sum;
-        }        
+        }   
+        
+        sc.close();
 
     }
     

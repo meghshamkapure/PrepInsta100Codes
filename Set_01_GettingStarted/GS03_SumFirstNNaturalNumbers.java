@@ -15,5 +15,7 @@ public class GS03_SumFirstNNaturalNumbers {
         }
 
         System.out.println("The sum of digit from 1 to " + n + " is " + sum);
+        sc.close();
+
     }
 }

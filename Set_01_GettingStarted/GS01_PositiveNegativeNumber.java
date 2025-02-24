@@ -12,5 +12,7 @@ public class GS01_PositiveNegativeNumber {
         int n = sc.nextInt();
 
         System.out.println(n == 0 ? "Zero" : n > 0 ? "Positive number" : "Negetive number");
+
+        sc.close();
     }
 }

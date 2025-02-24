@@ -22,5 +22,8 @@ public class GS21_PrimeFactorsOfNumber {
                 divisor++;
             }
         }
+
+        sc.close();
+
     }    
 }

@@ -21,6 +21,8 @@ public class GS18_FactorialNumber {
         }
 
         System.out.println(factorial);
+        sc.close();
+
     }
     
 }

@@ -29,5 +29,7 @@ public class GS17_NthTermFibonacciSeries {
         }
 
         System.out.println(nthTerm+"th Fibonacee series number is "+sum);
+        sc.close();
+
     }
 }

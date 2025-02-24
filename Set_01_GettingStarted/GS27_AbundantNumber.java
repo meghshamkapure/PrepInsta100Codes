@@ -18,6 +18,9 @@ public class GS27_AbundantNumber {
         else {
             System.out.println("Not Abundant number ");
         }
+
+        sc.close();
+
     }
 
     public static int sumOfProperDivisor(int number) {

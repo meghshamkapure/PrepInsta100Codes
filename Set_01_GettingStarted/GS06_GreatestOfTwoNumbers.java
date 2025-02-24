@@ -23,5 +23,8 @@ public class GS06_GreatestOfTwoNumbers {
 
         }
 
+        sc.close();
+
+
     }
 }

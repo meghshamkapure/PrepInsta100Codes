@@ -17,5 +17,7 @@ public class GS12_ReverseNumber {
             n /= 10;                     
         }
         System.out.println(reversedNum);
+        sc.close();
+
     }
 }

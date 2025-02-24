@@ -20,6 +20,8 @@ public class GS22_StrongNumber {
         }
 
         System.out.print(factorialSum == number?"Strong Number":"Not Strong Number");
+        sc.close();
+
     }
 
     public static int factorial (int number){
