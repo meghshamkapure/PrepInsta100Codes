@@ -1,61 +1,58 @@
-// Hexadecimal to Decimal Conversion
-// Converts a hexadecimal number (base 16) into a decimal number (base 10).
+//Hexadecimal to Decimal Conversion  
+//Converts a hexadecimal number (base 16) into a decimal number (base 10). 
+
 package Set_02_workingWithNumbers;
 
-import java.util.Scanner;
+import java.util.*;
 
-public class WWN05_HexadecimalToDecimal {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the Hexadecimal Number : ");
-        String hexString =sc.nextLine();
-
-        if (isHex(hexString.strip())) {
-            System.out.println(hexToDecimal(hexString.strip()));
-        }else{
-            System.out.println(hexString+" is not a HEX value");
+public class WWN05_HexadecimalToDecimal{
+    public static void main (String args []){
+        Scanner sc  = new Scanner (System.in);
+       
+        System.out.print("Enter number to be converted from Hexadecimal to Decimal : ");
+       
+        String hexNum = sc.nextLine();
+         int decimalNumber = 0 ;
+       
+        int [] hexNumArray = hexCharsToNums(hexNum);
+       if (hexNumArray!=null){
+       
+        for(int i =0; i< hexNumArray.length; i++){
+            decimalNumber = decimalNumber + (hexNumArray[i] * (int) Math.pow(16,hexNumArray.length-i-1));    
         }
-
-        sc.close();
-
+       
+        System.out.println("HEXADECIMAL ["+hexNum+"] : DECIMAL ["+decimalNumber+"]");
+       }else{
+           System.out.println("INVALID HEX VALUE");
+       }
+       
+       sc.close();
     }
-
-    public static boolean isHex(String hexString) {
-        for (int i = 0; i < hexString.length(); i++) {
-            char ch = hexString.charAt(i);
-            if (!((ch >= '0' && ch <= '9') || ch >= 'A' && ch <= 'F' || ch >= 'a' && ch <= 'f')) {
-                return false;
+   
+    public static int [] hexCharsToNums (String hex){
+        int hexNumArray []  = new int [hex.length()];
+        for (int i = 0; i<hex.length() ; i++ ){
+           
+            // 0-9: ASCII 48-57            
+            if(hex.charAt(i)>=48 && hex.charAt(i)<=57){
+                hexNumArray[i]=hex.charAt(i)-48;
+            }
+           
+            // a-z: ASCII 97-122
+             else if(hex.charAt(i)>=97 && hex.charAt(i)<=102){
+                hexNumArray[i]=hex.charAt(i)-86;
+            }
+           
+            // A-Z: ASCII 65-90
+             else if(hex.charAt(i)>=65 && hex.charAt(i)<=70){
+                hexNumArray[i]=hex.charAt(i)-54;
+            }
+           
+            else{
+                return null;
             }
         }
-
-        return true;
+         return hexNumArray;
+       
     }
-
-    public static int hexToDecimal(String hexString) {
-        int decimalValue = 0;
-        int[] hexValuesArray = new int[hexString.length()];
-        for (int i = 0; i < hexString.length(); i++) {
-            char ch = hexString.charAt(i);
-            // A-Z:65-90, a-z:97-122, 0-9:48-57
-
-            if (ch >= 'A' && ch <= 'F') {
-                hexValuesArray[i] = (ch - 65) + 10;
-            } else if (ch >= 'a' && ch <= 'f') {
-                hexValuesArray[i] = (ch - 97) + 10;
-            } else if (ch >= '0' && ch <= '9') {
-                hexValuesArray[i] = (ch - 48);
-            }
-        }
-
-        int baseValue = hexValuesArray.length - 1;
-
-        for (int j = 0; j < hexValuesArray.length; j++) {
-            decimalValue = decimalValue + (hexValuesArray[j] * (int) (Math.pow(16, baseValue)));
-
-            baseValue--;
-        }
-
-        return decimalValue;
-    }
-
 }
