@@ -1,3 +1,5 @@
+// Highest Common Factor (HCF)
+// Finds the greatest number that divides two or more numbers without leaving a remainder.
 package Set_02_workingWithNumbers;
 
 import java.util.Scanner;
@@ -14,30 +16,28 @@ public class WWN00_HCF_Finder {
 
         int hcf = 1;
 
-
-        if  (num1!=0 && num2!=0){
-            if (num1==num2){
+        if (num1 != 0 && num2 != 0) {
+            if (num1 == num2) {
                 hcf = num1;
-            }
-            else{
-            int smallNum = num1>num2?num1:num2;
+            } else {
+                int smallNum = num1 > num2 ? num1 : num2;
 
-            for (int i = 2; i < smallNum; i++) {
-                if (num1 % i==0 && num2 % i ==0){
-                    hcf=i;
+                for (int i = 2; i < smallNum; i++) {
+                    if (num1 % i == 0 && num2 % i == 0) {
+                        hcf = i;
+                    }
                 }
             }
-            }
-        System.out.println("Highest Common Factor [HCF] for "+num1+" and "+num2+" is "+hcf);
-        }else{
-            if (num1==0)
+            System.out.println("Highest Common Factor [HCF] for " + num1 + " and " + num2 + " is " + hcf);
+        } else {
+            if (num1 == 0)
                 System.out.println("Number 1 can't be zero");
 
-            if (num2==0)
+            if (num2 == 0)
                 System.out.println("Number 2 can't be zero");
         }
-        
+
         sc.close();
-        
+
     }
 }

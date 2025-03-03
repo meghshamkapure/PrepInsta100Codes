@@ -1,3 +1,5 @@
+// Binary to Octal Conversion
+// Converts a binary number (base 2) into an octal number (base 8).
 package Set_02_workingWithNumbers;
 
 import java.util.Scanner;
@@ -13,23 +15,22 @@ public class WWN09_BinaryToOctal {
 
         if (isBinary(binaryNumber)) {
             while (binaryNumber > 0) {
-                long digit  = binaryNumber % 1000;
-                octalNumber =  toBinary(toBinary(digit)) + octalNumber;
+                long digit = binaryNumber % 1000;
+                octalNumber = toBinary(toBinary(digit)) + octalNumber;
                 binaryNumber /= 1000;
             }
 
-            System.out.println("BINARY ["+binaryNumberCopy+"] : OCTAL ["+octalNumber+"]");
+            System.out.println("BINARY [" + binaryNumberCopy + "] : OCTAL [" + octalNumber + "]");
         } else {
             System.out.println("INVALID BINARY NUMBER !!!");
         }
 
     }
 
-    
-	public static long toBinary(long number) {
+    public static long toBinary(long number) {
         int decimal = 0;
         int i = 0;
-      while (number > 0) {
+        while (number > 0) {
             decimal += (number % 10) * Math.pow(2, i++);
             number /= 10;
         }

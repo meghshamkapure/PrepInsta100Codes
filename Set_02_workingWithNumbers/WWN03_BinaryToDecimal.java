@@ -1,6 +1,5 @@
 // Binary to Decimal Conversion
 // Converts a binary number (base 2) into a decimal number (base 10).
-
 package Set_02_workingWithNumbers;
 
 import java.util.Scanner;
@@ -25,12 +24,11 @@ public class WWN03_BinaryToDecimal {
             }
 
             System.out.println("BINARY : " + binaryCopy + " is " + "DECIMAL : " + decimalNumber);
-        }else{
+        } else {
             System.out.println("The number is binary");
         }
 
         sc.close();
-
 
     }
 
