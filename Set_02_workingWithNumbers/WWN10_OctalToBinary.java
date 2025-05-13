@@ -27,6 +27,7 @@ public class WWN10_OctalToBinary {
             System.out.println("INVALID OCTAL NUNBER !!!");
         }
 
+        sc.close();
     }
 
     public static boolean isOctal(int num) {

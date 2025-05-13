@@ -24,5 +24,7 @@ public class WWN07_DecimalToOctal {
         }
         System.out.println("DECIMAL [ " + decimalNumber + " ] = OCTAL [ " + octalNumber + " ] ");
 
+        sc.close();
+
     }
 }

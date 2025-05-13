@@ -25,6 +25,8 @@ public class WWN09_BinaryToOctal {
             System.out.println("INVALID BINARY NUMBER !!!");
         }
 
+        sc.close();
+
     }
 
     public static long toBinary(long number) {

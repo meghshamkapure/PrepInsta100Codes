@@ -21,6 +21,7 @@ public class WWN08_DecimalToHexadecimal {
 
         System.out.println("DECIMAL [" + decimalNumber + "] : HEXDECIMAL [" + hexDecimalValue + "]");
 
+        sc.close();
     }
 
     public static String addCharacter(String hexDecimalValue, Integer addChar) {
